@@ -1,4 +1,6 @@
 import 'package:doctor_app/core/routing/routes.dart';
+import 'package:doctor_app/features/login/ui/login_screen.dart';
+import 'package:doctor_app/features/onboarding/ui/onboarding_screen.dart';
 import 'package:flutter/material.dart';
 
 class AppRouter{
@@ -7,11 +9,11 @@ class AppRouter{
     switch (settings.name ){
       case Routes.onboardingScreen :
         return MaterialPageRoute(
-            builder: (_)=>
+            builder: (_)=> const OnboardingScreen(),
         );
         case Routes.loginScreen :
         return MaterialPageRoute(
-            builder: (_)=>
+            builder: (_)=> const LoginScreen(),
         );
       default:
         return MaterialPageRoute(
