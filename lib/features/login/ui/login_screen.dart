@@ -16,11 +16,18 @@ class LoginScreen extends StatelessWidget {
           ),
           child: SingleChildScrollView(
             child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
                   'Welcome Back',
-                style: TextStyles.font32BlueBold ,
+                  style: TextStyles.font24BlueBold,
+                ),
+                SizedBox(
+                  height: 8.h,
+                ),
+                Text(
+                  'We\'re excited to have you back, can\'t wait to see what you\'ve been up to since you last logged in.',
+                  style: TextStyles.font14GreyRegular,
                 ),
               ],
             ),
