@@ -1,4 +1,5 @@
 import 'package:doctor_app/core/theme/styles.dart';
+import 'package:doctor_app/core/widgets/app_text_form_field.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -14,6 +15,7 @@ class LoginScreen extends StatefulWidget {
 class _LoginScreenState extends State<LoginScreen> {
 
   final formKey=GlobalKey<FormState>();
+  bool isObscureText=true;
 
   @override
   Widget build(BuildContext context) {
@@ -40,8 +42,26 @@ class _LoginScreenState extends State<LoginScreen> {
                 verticalSpace(36),
                 Form(
                   key: formKey,
-                    child: Column(
+                    child:  Column(
                       children: [
+                        const AppTextFormField(hintText: 'Email'),
+                        verticalSpace(18),
+                        AppTextFormField(
+                          hintText: 'Password',
+                          isObscureText: isObscureText,
+                          suffixIcon: GestureDetector(
+                            onTap: (){
+                              setState(() {
+                                isObscureText =! isObscureText;
+                              });
+
+                            },
+                            child: Icon(isObscureText? Icons.visibility_off:Icons.visibility),
+                          ),
+                        ),
+                        verticalSpace(24),
+
+
 
                       ],
                     ),

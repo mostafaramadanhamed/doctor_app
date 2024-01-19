@@ -12,18 +12,22 @@ class AppTextFormField extends StatelessWidget {
   final String hintText;
   final bool ? isObscureText;
   final Widget ? suffixIcon;
+  final Color ? backgroundColor;
   const AppTextFormField({
     super.key,
     this.contentPadding, this.focusedBorder,
     this.enabledBorder, this.inputTextStyle,
     this.hintStyle, required this.hintText,
-    this.isObscureText, this.suffixIcon,
+    this.isObscureText, this.suffixIcon, this.backgroundColor,
   });
 
   @override
   Widget build(BuildContext context) {
     return  TextFormField(
+
       decoration: InputDecoration(
+        filled: true,
+        fillColor:backgroundColor?? ColorManager.moreLightGrey,
         isDense: true,
         contentPadding: contentPadding?? EdgeInsets.symmetric(
           horizontal:20.w ,
