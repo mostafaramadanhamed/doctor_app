@@ -28,6 +28,14 @@ class TextStyles{
     fontSize: 14.sp,
     fontWeight: FontWeightHelper.regular,
     color: ColorManager.grey,
+  );static TextStyle font14LightGreyRegular= TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeightHelper.light,
+    color: ColorManager.lightGrey,
+  );static TextStyle font14DarkBlueMedium= TextStyle(
+    fontSize: 14.sp,
+    fontWeight: FontWeightHelper.medium,
+    color: ColorManager.darkBlue,
   );
  static TextStyle font160WhiteSemi= TextStyle(
     fontSize: 16.sp,
