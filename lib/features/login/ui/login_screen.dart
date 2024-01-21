@@ -45,7 +45,9 @@ class _LoginScreenState extends State<LoginScreen> {
                   key: formKey,
                     child:  Column(
                       children: [
-                        const AppTextFormField(hintText: 'Email'),
+                        const AppTextFormField(
+                          textInputType: TextInputType.emailAddress,
+                            hintText: 'Email'),
                         verticalSpace(18),
                         AppTextFormField(
                           hintText: 'Password',

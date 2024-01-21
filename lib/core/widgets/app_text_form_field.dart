@@ -10,6 +10,7 @@ class AppTextFormField extends StatelessWidget {
   final TextStyle ? inputTextStyle;
   final TextStyle ? hintStyle;
   final String hintText;
+  final TextInputType? textInputType;
   final bool ? isObscureText;
   final Widget ? suffixIcon;
   final Color ? backgroundColor;
@@ -18,12 +19,13 @@ class AppTextFormField extends StatelessWidget {
     this.contentPadding, this.focusedBorder,
     this.enabledBorder, this.inputTextStyle,
     this.hintStyle, required this.hintText,
-    this.isObscureText, this.suffixIcon, this.backgroundColor,
+    this.isObscureText, this.suffixIcon, this.backgroundColor, this.textInputType,
   });
 
   @override
   Widget build(BuildContext context) {
     return  TextFormField(
+      keyboardType: textInputType??TextInputType.text,
 
       decoration: InputDecoration(
         filled: true,
