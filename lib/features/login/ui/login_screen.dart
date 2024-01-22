@@ -1,6 +1,7 @@
 import 'package:doctor_app/core/theme/styles.dart';
 import 'package:doctor_app/core/widgets/app_text_button.dart';
 import 'package:doctor_app/core/widgets/app_text_form_field.dart';
+import 'package:doctor_app/features/login/ui/widgets/already_have_account.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 
@@ -77,8 +78,10 @@ class _LoginScreenState extends State<LoginScreen> {
 
                             },
                         ),
+                        verticalSpace(16),
 
-
+                        verticalSpace(60),
+                        const AlreadyHaveAccountText(),
 
                       ],
                     ),
