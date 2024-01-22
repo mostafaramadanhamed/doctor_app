@@ -19,7 +19,15 @@ class TextStyles{
     fontWeight: FontWeightHelper.bold,
     color: ColorManager.mainBlue,
   );
-  static TextStyle font13GreyRegular= TextStyle(
+  static TextStyle font13DarkBlueRegular= TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.regular,
+    color: ColorManager.darkBlue,
+  );static TextStyle font13BlueSemiBold= TextStyle(
+    fontSize: 13.sp,
+    fontWeight: FontWeightHelper.semiBold,
+    color: ColorManager.mainBlue,
+  );static TextStyle font13GreyRegular= TextStyle(
     fontSize: 13.sp,
     fontWeight: FontWeightHelper.regular,
     color: ColorManager.grey,

@@ -77,7 +77,11 @@ class _LoginScreenState extends State<LoginScreen> {
 
                             },
                         ),
-
+                        verticalSpace(16),
+                        RichText(
+                          text: ,
+                        ),
+                        verticalSpace(60),
 
 
                       ],
