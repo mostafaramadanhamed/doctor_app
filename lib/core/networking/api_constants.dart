@@ -1,8 +1,10 @@
-class ApiConstants{
-  static const String baseUrl='https://vcare.integration25.com/api/';
-  static const String login='auth/login';
+class ApiConstants {
+  static const String apiBaseUrl = "https://vcare.integration25.com/api/";
+
+  static const String login = "auth/login";
 }
-  class ApiErrors {
+
+class ApiErrors {
   static const String badRequestError = "badRequestError";
   static const String noContent = "noContent";
   static const String forbiddenError = "forbiddenError";
@@ -18,4 +20,4 @@ class ApiConstants{
   static const String loadingMessage = "loading_message";
   static const String retryAgainMessage = "retry_again_message";
   static const String ok = "Ok";
-  }
+}
